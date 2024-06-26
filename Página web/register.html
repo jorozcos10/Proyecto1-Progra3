@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/register.css">
+
+    <title>Matrícula Universitaria</title>
+</head>
+<body>
+    <div class="wrapper bg-white">
+        <div class="h2 text-center">Matrícula Universitaria</div>
+        <div class="h4 text-muted text-center pt-2">Ingrese sus datos de matrícula</div>
+        <form class="pt-3" action="" method="POST">
+            <h5 class="text-muted">Información Personal</h5>
+            <div class="form-group py-2">
+                <input type="text" placeholder="Nombre Completo" name="full_name" required class="form-control">
+            </div>
+            <div class="form-group py-2">
+                <label>Fecha de nacimiento:</label>
+                <input type="date" placeholder="Fecha de Nacimiento" name="date_of_birth" required class="form-control">
+            </div>
+            <div class="form-group py-2">
+                <input type="text" placeholder="Número de Identificación" name="id_number" required class="form-control">
+            </div>
+            <div class="form-group py-2">
+                <input type="text" placeholder="Dirección" name="address" required class="form-control">
+            </div>
+            <div class="form-group py-2">
+                <input type="tel" placeholder="Número de Teléfono" name="phone_number" required class="form-control">
+            </div>
+            <div class="form-group py-2">
+                <input type="email" placeholder="Correo Electrónico" name="email" required class="form-control">
+            </div>
+            <div class="form-group py-2">
+                <input type="password" placeholder="Contraseña" name="password" required class="form-control">
+            </div>
+            <div class="form-group py-2">
+                <input type="text" placeholder="Nacionalidad" name="nationality" required class="form-control">
+            </div>
+            <div class="form-group py-2">
+                <select name="gender" required class="form-control">
+                    <option value="">Seleccionar Género</option>
+                    <option value="male">Masculino</option>
+                    <option value="female">Femenino</option>
+                    <option value="other">Otro</option>
+                </select>
+            </div>
+            <h5 class="text-muted">Información Académica</h5>
+            <div class="form-group py-2">
+                <input type="text" placeholder="Institución Anterior" name="previous_institution" required class="form-control">
+            </div>
+            <div class="form-group py-2">
+                <label for="">Fecha de Graduación: </label>
+                <input type="date" placeholder="Fecha de Graduación" name="graduation_date" required class="form-control">
+            </div>
+            <div class="form-group py-2">
+                <input type="text" placeholder="Título Obtenido" name="degree_obtained" class="form-control">
+            </div>
+            
+            <div class="form-group py-2">
+                <select name="study_mode" required class="form-control">
+                    <option value="">Seleccionar Modalidad de Estudio</option>
+                    <option value="presential">Presencial</option>
+                    <option value="online">En Línea</option>
+                </select>
+            </div>
+          
+            <button type="submit" class="btn btn-block text-center my-3">Enviar Matrícula</button>
+
+            <div id="success-message" class="alert alert-success text-center" style="display: none;">
+                Matrícula Exitosa. Redirigiendo...
+            </div>
+        </form>
+    </div>
+
+    <script src="js/register.js"></script>
+</body>
+</html>
